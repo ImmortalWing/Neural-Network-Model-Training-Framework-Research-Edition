@@ -1,6 +1,6 @@
 import torch.nn as nn
 import torch
-from 模型.tcn import TemporalConvNet
+from modelcode.tcn import TemporalConvNet
 from torch.nn.utils.parametrizations import weight_norm
 
 

@@ -4,7 +4,7 @@ from sklearn.metrics import mean_squared_error, mean_absolute_error, r2_score
 import seaborn as sns
 import numpy as np
 import pandas as pd
-from 模型.mymodel import DAR,LSTM,CNNGRU,GRU,TCN
+from modelcode.mymodel import DAR,LSTM,CNNGRU,GRU,TCN
 import matplotlib.pyplot as plt
 import seaborn as sns
 

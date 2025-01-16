@@ -3,7 +3,7 @@ import pandas as pd
 import torch.nn as nn
 from torch.utils.data import TensorDataset,DataLoader
 from torch.optim import lr_scheduler
-from 模型 import mymodel
+from modelcode import mymodel
 from tools import CustomStandardScaler, CustomMinMaxScaler, EarlyStopping
 import torch
 import matplotlib.pyplot as plt
@@ -16,8 +16,7 @@ import time
 class Exp:
     def __init__(self):
         super(Exp, self).__init__()
-        #self.data_path = '数据/wind_dataset.csv'
-        self.data_path = '数据/Water/Aquifer_Petrignano1.csv'
+        self.data_path = 'data/Water/Aquifer_Petrignano1.csv'
         self.timestep = 60  # 时间步长，就是利用多少时间窗口
         self.batch_size = 64  # 批次大小
         self.feature_size = 5
